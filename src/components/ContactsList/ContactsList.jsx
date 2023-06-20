@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { selectContacts, selectFilter, selectIsLoading } from 'redux/selectors';
-import { deleteContact } from 'redux/operation';
+import { selectContacts, selectIsLoading } from 'redux/contacts/contactsSelectors';
+import { selectFilter } from 'redux/filter/filterSelector';
+import { deleteContact } from 'redux/contacts/contactsOperations';
 import css from './ContactList.module.css';
 
 export function ContactsList() {
@@ -21,7 +22,7 @@ export function ContactsList() {
   return (
     <>
       {isLoading && <p>Loading...</p>}
-    <ul className={css.phonebook__list}>
+      <ul className={css.phonebook__list}>
         {getFilteredContacts() && getFilteredContacts().map(({ id, name, number }) => (
           <li className={css.phonebook__item} key={id}>
             <span>{name}</span>:

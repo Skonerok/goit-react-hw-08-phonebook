@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/operation';
-import { selectContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/contactsOperations';
+import { selectContacts } from 'redux/contacts/contactsSelectors';
 import css from './ContactForm.module.css';
 import toast, { Toaster } from 'react-hot-toast';
 

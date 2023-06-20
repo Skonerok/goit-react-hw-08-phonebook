@@ -1,14 +1,14 @@
 .phonebook__list {
     font-weight: 600;
+    padding: 0;
     margin-left: 10px;
     list-style-type: none;
-    padding: 0;
 }
 
 .phonebook__item {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -19,13 +19,18 @@ span {
 
 .phonebook__delete {
     display: block;
-    margin-left: 10px;
-    width: 70px;
-    padding: 5px;
-    font-size: 10px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #000;
-    border: transparent;
-    border-radius: 3px;
+        padding: 3px 10px;
+        background-color: #292A73;
+            color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.phonebook__delete:hover,
+.phonebook__delete:focus {
+    background-color: #3A9EFD;
+        color: #000;
 }

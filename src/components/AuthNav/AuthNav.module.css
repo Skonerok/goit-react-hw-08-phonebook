@@ -1,0 +1,22 @@
+.link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    background-color: #292A73;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.link:last-child {
+    margin-left: 10px;
+}
+
+.link:hover,
+.link:focus {
+    background-color: #3A9EFD;
+    color: #000;
+}
